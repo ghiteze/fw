@@ -1,0 +1,15 @@
+*,
+*:before,
+*:after
+	@include box_sizing
+
+body
+	margin: 0
+
+%clearfix
+	&:before,
+	&:after
+		display: table
+		content: " "
+	&:after
+		clear: both

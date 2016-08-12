@@ -1,0 +1,31 @@
+.container
+	%h2 Form
+
+	.input
+		%h3 Input
+		%form.form.grid
+			.form__field.col.mobile-12
+				%input{ type: "text", placeholder: "Textbox" }
+			.form__field.col.mobile-12
+				%input{ type: "email", placeholder: "Email" }
+			.form__field.col.mobile-12
+				%input{ type: "password", placeholder: "Password" }
+			.form__field.col.mobile-12
+				%input{ type: "number", placeholder: "Number" }
+			.form__field.col.mobile-12
+				.grid
+					.col.mobile-6
+						%input{ type: "text" }
+					.col.mobile-6
+						%input{ type: "text" }
+			.form__field.col.mobile-12
+				%textarea{ placeholder: "Textarea" }
+
+	.button
+		%h3 Button
+		%button.btn.btn--default Default
+		%a.btn.btn--primary{ href: "#" } Primary
+		%button.btn.btn--warning Warning
+		%button.btn.btn--success Success
+		%button.btn.btn--hihi Hihihihihihi
+

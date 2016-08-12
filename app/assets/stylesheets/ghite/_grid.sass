@@ -1,0 +1,30 @@
+.container
+	width: $container__width
+	margin-left: auto
+	margin-right: auto
+	padding-left: $scale
+	padding-right: $scale
+	@extend %clearfix
+
+.grid
+	margin-left: - $scale
+	margin-right: - $scale
+	@extend %clearfix
+
+.col
+	float: left
+	padding-left: $scale
+	padding-right: $scale
+	
+	@include screen('mobile')
+	
+	@media #{$tablet_screen}
+		@include screen('tablet')
+	
+	@media #{$pc_screen}
+		@inclue screen('pc')
+
+@media #{$mobile_screen_only}
+	.container
+		width: 100%
+
