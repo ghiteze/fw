@@ -1,61 +1,61 @@
 .form
 
 .form__field
-	display: inline-block
-	width: 100%
-	margin-top: $scale
-	margin-bottom: $scale
-	
-	%input
-		width: 100%
-		font-family: inherit
-		font-size: $input__font-size
-		border: $input__border
-		border-radius: $input__border-radius
-		outline: 0
-		padding-left: $scale
-		padding-right: $scale
-		@include transition(all, 0.35s, null, null)
-		&:focus
-			border-color: red
+  display: inline-block
+  width: 100%
+  margin-top: $scale
+  margin-bottom: $scale
 
-	input[type=text],
-	input[type=email],
-	input[type=password],
-	input[type=number]
-		@extend %input
-		height: $input__height
+  %input
+    width: 100%
+    font-family: inherit
+    font-size: $input__font-size
+    border: $input__border
+    border-radius: $input__border-radius
+    outline: 0
+    padding-left: $scale
+    padding-right: $scale
+    @include transition(all, 0.35s, null, null)
+    &:focus
+      border-color: red
 
-	textarea
-		@extend %input
-		height: $textarea__height
-		resize: none
-		padding-top: $scale
-		padding-bottom: $scale
+  input[type=text],
+  input[type=email],
+  input[type=password],
+  input[type=number]
+    @extend %input
+    height: $input__height
+
+  textarea
+    @extend %input
+    height: $textarea__height
+    resize: none
+    padding-top: $scale
+    padding-bottom: $scale
 
 .btn
-	display: inline-block
-	height: $button__height
-	line-height: $button__height
-	font-size: inherit
-	border: 0
-	outline: 0
-	text-decoration: none
-	cursor: pointer
-	padding-left: $scale * 2
-	padding-right: $scale * 2
+  display: inline-block
+  height: $button__height
+  line-height: $button__height
+  font-size: inherit
+  border: 0
+  outline: 0
+  text-decoration: none
+  cursor: pointer
+  padding-left: $scale * 2
+  padding-right: $scale * 2
 
-	&.btn--default
-		@include button($button__bg-color--default)
+  &.btn--default
+    @include button($button__bg-color--default)
 
-	&.btn--primary
-		@include button($button__bg-color--primary)
+  &.btn--primary
+    @include button($button__bg-color--primary)
 
-	&.btn--success
-		@include button($button__bg-color--success)
+  &.btn--success
+    @include button($button__bg-color--success)
 
-	&.btn--warning
-		@include button($button__bg-color--warning)
+  &.btn--warning
+    @include button($button__bg-color--warning)
 
-	&.btn--hihi
-		@include button_gradient(#9ebd97, #3ecfa6)
+  &.btn--hihi
+    @include button_gradient(#9ebd97, #3ecfa6)

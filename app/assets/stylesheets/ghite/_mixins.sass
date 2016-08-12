@@ -1,51 +1,47 @@
 @mixin button($bg_color, $text_color: $button__text-color, $radius: $button__border-radius)
-	color: $text_color
-	@include rounded($radius)
-	@if $bg_color
-		background-color: $bg_color
+  color: $text_color
+  @include rounded($radius)
+  @if $bg_color
+  background-color: $bg_color
 
 @mixin button_gradient($from, $to, $text_color: $button__text-color, $radius: 30px)
-	@include button(null, $text_color, $radius)
-	@include gradient($from, $to)
+  @include button(null, $text_color, $radius)
+  @include gradient($from, $to)
 
 @mixin gradient($from, $to)
-	background: -webkit-linear-gradient(20deg, $from, $to)
-	background: -moz-linear-gradient(20deg, $from, $to)
-	background: -o-linear-gradient(20deg, $from, $to)
-	background: linear-gradient(70deg, $from, $to)
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#{$from}', endColorstr='#{$to}',GradientType=1 )
+  background: -webkit-linear-gradient(20deg, $from, $to)
+  background: -moz-linear-gradient(20deg, $from, $to)
+  background: -o-linear-gradient(20deg, $from, $to)
+  background: linear-gradient(70deg, $from, $to)
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#{$from}', endColorstr='#{$to}',GradientType=1 )
 
 @mixin rounded($radius: $button__border-radius)
-	-webkit-border-radius: $radius
-	-moz-border-radius: $radius
-	border-radius: $radius
+  -webkit-border-radius: $radius
+  -moz-border-radius: $radius
+  border-radius: $radius
 
 @mixin box_sizing($box: border-box)
-	-webkit-box-sizing: $box
-	-moz-box-sizing: $box
-	box-sizing: $box
+  -webkit-box-sizing: $box
+  -moz-box-sizing: $box
+  box-sizing: $box
 
 @mixin position($value, $top, $right, $bottom, $left, $z)
-	position: $value
-	top: $top
-	right: $right
-	bottom: $bottom
-	left: $left
-	z-index: $z
+  position: $value
+  top: $top
+  right: $right
+  bottom: $bottom
+  left: $left
+  z-index: $z
 
 @mixin transition($property, $duration, $delay, $timing_function)
-	-webkit-transition: $property $duration $delay $timing_function
-	-moz-transition: $property $duration $delay $timing_function
-	-o-transition: $property $duration $delay $timing_function
-	transition: $property $duration $delay $timing_function
+  -webkit-transition: $property $duration $delay $timing_function
+  -moz-transition: $property $duration $delay $timing_function
+  -o-transition: $property $duration $delay $timing_function
+  transition: $property $duration $delay $timing_function
 
 @mixin screen($screen)
-	$i: 1
-	@while $i <= 12
-		&.#{$screen}-#{$i}
-			width: unquote(100 / (12 / $i)  + "%")
-		$i: $i + 1
-
-
-
-
+  $i: 1
+  @while $i <= 12
+    &.#{$screen}-#{$i}
+      width: unquote(100 / (12 / $i)  + "%")
+    $i: $i + 1
