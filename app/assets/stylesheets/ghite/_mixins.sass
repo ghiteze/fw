@@ -2,7 +2,10 @@
   color: $text_color
   @include rounded($radius)
   @if $bg_color
-  background-color: $bg_color
+    background-color: $bg_color
+    @include transition(all, 0.35s)
+    &:hover
+      background-color: rgba($bg_color, 0.8)
 
 @mixin button_gradient($from, $to, $text_color: $button__text-color, $radius: 30px)
   @include button(null, $text_color, $radius)
@@ -33,7 +36,7 @@
   left: $left
   z-index: $z
 
-@mixin transition($property, $duration, $delay, $timing_function)
+@mixin transition($property, $duration, $timing_function: null, $delay: null)
   -webkit-transition: $property $duration $delay $timing_function
   -moz-transition: $property $duration $delay $timing_function
   -o-transition: $property $duration $delay $timing_function
@@ -46,7 +49,10 @@
       width: unquote(100 / (12 / $i)  + "%")
     $i: $i + 1
 
-
+@mixin box_shadow($x, $color, $in)
+  -webkit-box-shadow: $x $color $in
+  -moz-box-shadow: $x $color $in
+  box-shadow: $x $color $in
 
 
 
