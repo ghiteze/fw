@@ -1,35 +1,125 @@
 .container
 
-  .input
-    %h3 Input
-    %form.form
-      .form__field
-        %input{ type: "text", placeholder: "Textbox" }
-      .form__field
-        %input{ type: "email", placeholder: "Email" }
-      .form__field
-        %input{ type: "password", placeholder: "Password" }
-      .form__field
-        %input{ type: "number", placeholder: "Number" }
-      .form__field
-        .grid
-          .col.mobile-4
-            %input{ type: "text" }
-          .col.mobile-4
-            %input{ type: "text" }
-          .col.mobile-4
-            %select
-              %option Haha
-              %option Hihi
-              %option Huhu
-      .form__field
-        %textarea{ placeholder: "Textarea" }
+  / Grid
+  %h3 Grid
+  .grid.grid-sample
+    .col.mobile-1
+      %p 1
+    .col.mobile-1
+      %p 1
+    .col.mobile-1
+      %p 1
+    .col.mobile-1
+      %p 1
+    .col.mobile-1
+      %p 1
+    .col.mobile-1
+      %p 1
+    .col.mobile-1
+      %p 1
+    .col.mobile-1
+      %p 1
+    .col.mobile-1
+      %p 1
+    .col.mobile-1
+      %p 1
+    .col.mobile-1
+      %p 1
+    .col.mobile-1
+      %p 1
 
-  .button
-    %h3 Button
-    %button.btn.btn--default Default
-    %a.btn.btn--primary{ href: "#" } Primary
-    %button.btn.btn--warning Warning
-    %button.btn.btn--success Success
-    %button.btn.btn--hihi Hihihihihihi
+    .col.mobile-2
+      %p 2
+    .col.mobile-2
+      %p 2
+    .col.mobile-2
+      %p 2
+    .col.mobile-2
+      %p 2
+    .col.mobile-2
+      %p 2
+    .col.mobile-2
+      %p 2
+
+    .col.mobile-3
+      %p 3
+    .col.mobile-3
+      %p 3
+    .col.mobile-3
+      %p 3
+    .col.mobile-3
+      %p 3
+
+    .col.mobile-4
+      %p 4
+    .col.mobile-4
+      %p 4
+    .col.mobile-4
+      %p 4
+
+    .col.mobile-6
+      %p 6
+    .col.mobile-6
+      %p 6
+
+    .col.mobile-5
+      %p 5
+    .col.mobile-7
+      %p 7
+
+    .col.mobile-4
+      %p 4
+    .col.mobile-8
+      %p 8
+
+    .col.mobile-3
+      %p 3
+    .col.mobile-9
+      %p 9
+
+    .col.mobile-2
+      %p 2
+    .col.mobile-10
+      %p 10
+
+    .col.mobile-1
+      %p 1
+    .col.mobile-11
+      %p 11
+
+    .col.mobile-12
+      %p 12
+
+  / Input
+  %h3 Input
+  %form.form
+    .form__field
+      %input{ type: "text", placeholder: "Textbox" }
+    .form__field
+      %input{ type: "email", placeholder: "Email" }
+    .form__field
+      %input{ type: "password", placeholder: "Password" }
+    .form__field
+      %input{ type: "number", placeholder: "Number" }
+    .form__field
+      .grid
+        .col.mobile-4
+          %input{ type: "text" }
+        .col.mobile-4
+          %input{ type: "text" }
+        .col.mobile-4
+          %select
+            %option Haha
+            %option Hihi
+            %option Huhu
+    .form__field
+      %textarea{ placeholder: "Textarea" }
+
+  / Button
+  %h3 Button
+  %button.btn.btn--default Default
+  %a.btn.btn--primary{ href: "#" } Primary
+  %button.btn.btn--warning Warning
+  %button.btn.btn--success Success
+  %button.btn.btn--gradient Gradient
 
