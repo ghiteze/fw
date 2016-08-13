@@ -22,9 +22,13 @@
   input[type=text],
   input[type=email],
   input[type=password],
-  input[type=number]
+  input[type=number],
+  select
     @extend %input
     height: $input__height
+
+  select
+    background-color: #fafafa
 
   textarea
     @extend %input
